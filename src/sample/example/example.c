@@ -9,3 +9,8 @@ lv_obj_t* CreateBg(lv_obj_t* par, lv_obj_t* copy)
     lv_obj_set_size(rect, 100, 100);
     return bg;
 }
+
+lv_obj_t* CreateMenuView(lv_obj_t* par, lv_obj_t* copy)
+{
+    return par;
+}
