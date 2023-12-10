@@ -34,7 +34,11 @@ static void do_register(void);
 static void win_drv_flush(lv_disp_t *drv, lv_area_t *area, const lv_color_t * color_p);
 static void win_drv_fill(int32_t x1, int32_t y1, int32_t x2, int32_t y2, lv_color_t color);
 static void win_drv_map(int32_t x1, int32_t y1, int32_t x2, int32_t y2, const lv_color_t * color_p);
+<<<<<<< HEAD
 static bool win_drv_read(lv_indev_drv_t *drv, lv_indev_data_t * data);
+=======
+static bool win_drv_read(struct _lv_indev_drv_t *drv, lv_indev_data_t * data);
+>>>>>>> 4e45004912c890873bbe5615d69a3b1de0405e5a
 static void msg_handler(void *param);
 
 static COLORREF lv_color_to_colorref(const lv_color_t color);
@@ -205,7 +209,11 @@ static void msg_handler(void *param)
         lv_win_exit_flag = true;
 }
 
+<<<<<<< HEAD
  static bool win_drv_read(lv_indev_drv_t *drv, lv_indev_data_t * data)
+=======
+ static bool win_drv_read(struct _lv_indev_drv_t *drv, lv_indev_data_t * data)
+>>>>>>> 4e45004912c890873bbe5615d69a3b1de0405e5a
 {
     data->state = mouse_pressed ? LV_INDEV_STATE_PR : LV_INDEV_STATE_REL;
     data->point.x = mouse_x;
